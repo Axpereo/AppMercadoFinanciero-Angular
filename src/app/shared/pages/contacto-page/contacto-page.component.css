@@ -1,18 +1,5 @@
-*{
-    color:#305646;
-}
-
-.fondo{
-    background-color: rgb(239, 239, 239);
-    margin-bottom: 0px;
-}
-
 h1{
     text-align: center;
-}
-
-.hr{
-    margin-bottom: 0;
 }
 
 .contactanos{
@@ -40,12 +27,12 @@ input, textarea{
     margin-bottom: 100px;
     padding: 30px 0;
     color: white;
-    background-color: #008E75;
+    background-color: #00877d;
     border-style: none;
 }
 
 .btn:hover{
-    background-color:#00C1DB ;
+    background-color:#18b4ab ;
     border-style: none;
 }
 

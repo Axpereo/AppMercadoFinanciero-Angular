@@ -1,25 +1,22 @@
-
-<!-- <component-select
-    (anioSeleccionado)="cargarMes($event)"
-    (mesSeleccionado)="cargarAnio($event)">
-</component-select> -->
 <br>
-<hr>
-<br>
-<component-grafico 
-    [moneda]="moneda"
-    [coinType]="coinType"
-    [currentYear]="currentYear"
-    [botonGrafico]="botonGrafico"
-    [nombreMoneda]="nombreMoneda">
-</component-grafico>
+<div class="fondo">
 
-<component-table 
-    [moneda]="moneda"
-    [coinType]="coinType"
-    [code]="code"
-    [currentYear]="currentYear">
-</component-table>
+    <br>
+    <br>
+    <br>
+    <component-grafico 
+        [moneda]="moneda"
+        [coinType]="coinType"
+        [currentYear]="currentYear"
+        [botonGrafico]="botonGrafico"
+        [nombreMoneda]="nombreMoneda">
+    </component-grafico>
 
-<!--     [miFuncionMes]="cargarMes"
-    [miFuncionAnio]="cargarAnio" -->
+    <component-table 
+        [moneda]="moneda"
+        [coinType]="coinType"
+        [code]="code"
+        [currentYear]="currentYear">
+    </component-table>
+
+</div>

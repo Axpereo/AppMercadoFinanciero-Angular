@@ -1,1 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+}
 
+body{
+    background: linear-gradient(#9ededb, #004b84, #000c1c);
+    background-attachment:fixed;
+    width: 100vw;
+    height: 100vh;
+}
+
+.dark-text{
+    color: #00283c;
+}
+
+.ligth-text{
+    color: white;
+}
+
+.alternative-text{
+    color:#00877d;
+}
+
+.fondo{
+    background-color: rgb(239, 239, 239);
+}

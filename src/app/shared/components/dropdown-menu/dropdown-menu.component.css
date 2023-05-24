@@ -1,18 +1,33 @@
 .drop-button{
     padding: 0 35px;
     border-style: none;
+    background: none;
 }
 
 .drop-button:hover{
-    background-color: #dedede;
+    background-color: #50a9a5;
 }
 
 .icon{
     font-size: 1.25rem;
-    color: #305646 ;
+    color: #000c1c;
 }
 
 .dropdown-item{
     text-align: end;
     padding: 0 50px;
+    background-color: #50a9a5;
+    border-top: solid 1px #ffffff;
+    border-bottom: solid 1px #ffffff;
+}
+
+.dropdown-menu{
+    background:none;
+    border-radius: 0%;
+    border-style: none;
+}
+
+.dropdown-item:hover{
+    background:#004b84;
+    color: white;
 }

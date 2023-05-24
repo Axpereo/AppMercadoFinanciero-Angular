@@ -1,12 +1,18 @@
-.centerSearch{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    margin: 35px 0px 20px 0px;
-}
-
 .inputSelector{
     margin: 0 15% 30px 15%;
+}
+
+.input-group-text{
+    cursor: pointer;
+}
+
+.icon{
+    width: 40px;
+}
+
+.form-control{
+    padding: 20px 0px;
+    text-align: center;
 }
 
 #cardsHome{
@@ -16,26 +22,33 @@
     flex-wrap: wrap;
 }
 
-.form-control{
-    padding: 20px 0px;
-    text-align: center;
-}
-
-.icon{
-    width: 40px;
-}
-
 .card{
     width: 400px;
     margin: 20px 20px;
+    border-style: none;
+}
+
+.card-img-top{
+    background-size: cover;
+    object-fit: cover;
+    height: 200px;
+
 }
 
 .card-body{
-    text-align: start;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
-.input-group-text{
-    cursor: pointer;
+.card-title{
+    font-size: 18px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.card-text{
+    font-size: 14px;
 }
 
 .btn{
@@ -55,5 +68,4 @@
     .inputSelector{
         margin: 0 15% 30px 15%;
     }
-    
 }

@@ -1,23 +1,16 @@
 .div-out{
-    width: 100vw;
     display: flex;
     flex-direction: column-reverse;
-    margin-left: 0px;
-    margin-right: 0px;
 }
 
 .div-in{
-    width: 100vw;
     padding: 30px 0px;
     display: flex;
     justify-content: center;
-    margin-left: 0px;
-    margin-right: 0px;
 }
 
 .div-in:hover{
-    background-color: #e9faff;
-
+    background-color: #ffffff;
 }
 
 .div-Info{

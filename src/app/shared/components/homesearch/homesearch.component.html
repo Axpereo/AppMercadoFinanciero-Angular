@@ -18,11 +18,11 @@
 
 <div id="cardsHome">
     <div class="card" *ngFor="let news of noticias">
-        <img src="{{news.urlToImage}}" class="card-img-top mb-4">
+        <img src="{{news.urlToImage}}" class="card-img-top" alt="Imagen">
         <div class="card-body">
           <h5 class="card-title">{{news.title}}</h5>
           <p class="card-text">{{news.description}}</p>
-          <a href="{{news.url}}" class="btn btn-primary mt-2" target="_blank">Visitar</a>
+          <a href="{{news.url}}" class="btn btn-primary" target="_blank">Visitar</a>
         </div>
     </div>
 </div>

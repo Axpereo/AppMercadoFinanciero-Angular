@@ -14,23 +14,22 @@
     border-radius: 100px;
     border-color: none;
     color: white;
-    background-color: #008E75;
+    background-color: #00877d;
     margin: 0 5px;
 }
 
 .btn:hover{
     color: white;
-    background-color: #00C1DB;
+    background-color: #18b4ab;
 }
 
 .btn:focus{
     color: white;
-    background-color: #00C1DB;
+    background-color: #18b4ab;
 }
 
 
 #contenedorGrafico{
-    background-color: #e9faff;
     padding: 50px 0;
 }
 
