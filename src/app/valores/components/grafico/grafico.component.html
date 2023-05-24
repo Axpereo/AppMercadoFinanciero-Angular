@@ -1,0 +1,41 @@
+<div class="contenedorTitulo">
+    <h3>Valores del {{nombreMoneda}}</h3>
+
+    <div class="botonesView">
+        <p>{{botonGrafico}}</p>
+        <div id="botones">
+            <!-- 1. (click) Creamos la funcion createChart(), el cual genera la propiedad {{chart}} y crea un boton en el DOM -->
+            <button class="btn"
+                    (click)="createChart()">
+                    <i class="fa-solid fa-chart-simple"></i>
+            </button>
+        
+        
+            <!-- 1. [ngStyle]  Verificamos si el grafico "chart" posee informacion, depende de eso el boton se visualiza o no
+                 2. (click) Creamos la funcion "recargar()", la cual ejecuta una acción sobre la propiedad "recarga" presente en la directiva personalizada
+                    appRecarga, del elemento HTML sobre el cual queremos realizar la acción -->
+            <button class="btn"
+                    [ngStyle]="{'display':chart == null ? 'none' : 'inline'}"
+                    (click)="recargar()">
+                    <i class="fa-solid fa-ban"></i>
+            </button>
+        </div>
+    </div>
+</div>
+
+<!-- 1. A traves de la directiva, se verifica el valor de la propiedad recarga en el grafico.component.ts
+     2. [ngStyle] Verificamos si el grafico "chart" posee informacion, depende de eso el contenedor del grafico se visualiza o no   -->
+
+<div *appRecarga="recarga">
+
+    <div id="contenedorGrafico"
+         [ngStyle]="{'display':chart == null ? 'none' : 'block'}">
+        
+        <div class="graficoContainer"
+             style="position: relative; height:40vh; width:100vw">
+            <canvas id="Chart"> {{ chart }} </canvas>
+        </div>
+
+    </div>
+</div>
+

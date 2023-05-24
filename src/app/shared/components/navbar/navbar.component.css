@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+.navBar{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style: none;
+    color: white;
+}
+
+.nav-item{
+    display: flex;
+    justify-content: center;
+    width: 110px;
+    background-color: #008E75;
+    margin: 10px;
+    border-radius: 8px;
+}
+
+.nav-link{
+    width: 110px;
+    background-color: #008E75;
+    padding: 10px 0;
+    border-radius: 8px;
+}
+
+.nav-link:active{
+    background-color: #00C1DB;
+    color: white;
+}
+
+.nav-link:focus{
+    background-color: #00C1DB;
+    color: white;
+}

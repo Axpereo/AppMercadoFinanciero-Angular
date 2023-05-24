@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.contenedor-nav{
+    background-color: rgb(239, 239, 239);
+}
+
+.elementos-nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    line-height: 80px;
+    margin: 0 10%;
+}
+
+.menu{
+    display: flex;
+    justify-content: center;
+    color: #305646 ;
+    cursor: pointer;
+}
+
+.texto{
+    display: flex;
+    justify-content: flex-start;
+    color: #305646 ;
+    cursor: pointer;
+    align-items: center;
+}
+
+h3{
+    font-size: 1.25rem;  
+    margin-left: 10px;
+}
+
+.logo{
+    height: 40px;
+}

@@ -1,0 +1,69 @@
+.contenedorTitulo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.botonesView{
+    display: flex;
+    align-items: center;
+}
+
+.btn{
+    border-radius: 100px;
+    border-color: none;
+    color: white;
+    background-color: #008E75;
+    margin: 0 5px;
+}
+
+.btn:hover{
+    color: white;
+    background-color: #00C1DB;
+}
+
+.btn:focus{
+    color: white;
+    background-color: #00C1DB;
+}
+
+
+#contenedorGrafico{
+    background-color: #e9faff;
+    padding: 50px 0;
+}
+
+.graficoContainer{
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+}
+
+p{
+    margin: 0;
+    padding: 0;
+}
+
+h3{
+    margin: 0px;
+    margin-right: 20px;
+}
+
+
+@media screen and (max-width: 360px){
+
+    .contenedorTitulo{
+        flex-direction: column;
+        margin: 0;
+    }
+
+    .botonesView{
+        margin-top: 20px;
+    }
+
+    #contenedorGrafico{
+        margin-top: 20px;
+        height: 280px;
+    }
+}

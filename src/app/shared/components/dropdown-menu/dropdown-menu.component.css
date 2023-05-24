@@ -1,0 +1,18 @@
+.drop-button{
+    padding: 0 35px;
+    border-style: none;
+}
+
+.drop-button:hover{
+    background-color: #dedede;
+}
+
+.icon{
+    font-size: 1.25rem;
+    color: #305646 ;
+}
+
+.dropdown-item{
+    text-align: end;
+    padding: 0 50px;
+}

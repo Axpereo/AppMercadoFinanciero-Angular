@@ -1,0 +1,38 @@
+<br>
+<hr class="hr">
+<div class="fondo">
+
+    <br>
+    <br>
+    <br>
+    <h1>Contáctanos</h1>
+    <br>
+    <div class="contactanos">
+        <div class="casilla">
+            <input type="text"
+                 class="form-control"
+                 aria-label="First name"
+                 placeholder="Nombre y Apellido"
+                 [(ngModel)]="nombre">
+        </div>
+        <div class="casilla">
+            <input type="email"
+                   class="form-control"
+                   placeholder="tuemail@ejemplo.com"
+                   [(ngModel)]="correo">
+        </div>
+        <div class="casilla">
+            <input type="text"
+                   class="form-control"
+                   placeholder="Título de tu consulta"
+                   [(ngModel)]="titulo">
+        </div>
+        <div class="form-floating casilla">
+            <textarea class="form-control"
+                      style="height: 200px"
+                      placeholder="Escribe tu comentario"
+                      [(ngModel)]="comentario"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary" (click)="enviar()">Enviar</button>
+    </div>
+</div>
