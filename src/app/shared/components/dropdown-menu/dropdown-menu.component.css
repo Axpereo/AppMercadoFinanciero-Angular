@@ -17,6 +17,8 @@
     text-align: end;
     padding: 0 50px;
     background-color: #50a9a5;
+    border-radius: 8px;
+    margin-bottom: 5px;
 }
 
 .dropdown-menu{
