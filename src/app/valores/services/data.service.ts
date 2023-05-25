@@ -9,7 +9,7 @@ import { Coins} from '../interfaces/valores';
 
 export class DataService implements OnInit{
 
-  private apiKey:     string = 'bf6b491ec46caf655a1204c927f559580679f4c4';
+  private apiKey:     string = 'df0f0dfe9a1956d6883885e1986dad1bb236bf1b';
   private serviceUrl: string = 'https://api.cmfchile.cl/api-sbifv3/recursos_api';
 
   moneda:string='';
