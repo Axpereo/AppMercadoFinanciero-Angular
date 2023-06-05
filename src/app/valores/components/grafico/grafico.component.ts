@@ -42,7 +42,9 @@ export class GraficoComponent implements OnInit{
           //  Formatear datos de valores para que se eliminen los puntos de un valor *1000 en el string y luego se reemplaze 
           //  la coma que posee el decimal por un punto
           let valorSinPuntos = this.coins[i].Valor.split('.').join('')
+          
           let valorReemplazoComas = valorSinPuntos.split(',').join('.')
+
           this.labelValor.push(valorReemplazoComas)
         }
       }})
