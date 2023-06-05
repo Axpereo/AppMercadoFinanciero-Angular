@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import Swal from 'sweetalert2'
 
 @Component({
   selector: 'app-contacto-page',
@@ -19,7 +20,25 @@ export class ContactoPageComponent {
     console.log(this.correo)
     console.log(this.titulo)
     console.log(this.comentario)
-    alert('Por ahora no necesitamos tus comentarios ;) Buen Intento!')
+
+    if(this.nombre === '' || this.correo === '' || this.titulo === '' || this.comentario === ''){
+      Swal.fire({
+        title: 'Error!',
+        text: 'Completa todos los campos',
+        icon: 'error',
+        confirmButtonText: 'Ok'
+      })
+    }else{
+      Swal.fire({
+        title: 'Enviado!',
+        text: 'Tu solicitud está siendo revisada',
+        icon: 'success',
+        confirmButtonText: 'Ok'
+      })
+    }
+
+
+
   }
 
 }

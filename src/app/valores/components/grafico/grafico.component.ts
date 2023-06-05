@@ -14,15 +14,15 @@ export class GraficoComponent implements OnInit{
   
   public chart: any;
 
-  @Input() public moneda:any;
-  @Input() public coinType:any;
+  @Input() public moneda:string = '';
+  @Input() public coinType:string = '';
   @Input() public currentYear:any;
   
-  @Input() public botonGrafico:any;
-  @Input() public nombreMoneda:any;
+  @Input() public botonGrafico:string = '';
+  @Input() public nombreMoneda:string = '';
 
   date = new Date()
-  labelFecha:any[]=[];
+  labelFecha:string[]=[];
   labelValor:any[]=[];
 
   constructor (private dataService:DataService){}
@@ -33,11 +33,17 @@ export class GraficoComponent implements OnInit{
     this.dataService.recibirDatos(this.moneda, this.coinType, this.currentYear)
     this.dataService.getData()
     .subscribe((response:any) => {
-      this.coins = response[this.coinType];
+      this.coins = response[this.coinType]; 
+
       if(this.coins != null){
         for(let i=0; i<this.coins.length; i++){
           this.labelFecha.push(this.coins[i].Fecha)
-          this.labelValor.push(parseFloat(this.coins[i].Valor))
+
+          //  Formatear datos de valores para que se eliminen los puntos de un valor *1000 en el string y luego se reemplaze 
+          //  la coma que posee el decimal por un punto
+          let valorSinPuntos = this.coins[i].Valor.split('.').join('')
+          let valorReemplazoComas = valorSinPuntos.split(',').join('.')
+          this.labelValor.push(valorReemplazoComas)
         }
       }})
   }

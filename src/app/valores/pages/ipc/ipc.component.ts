@@ -12,7 +12,7 @@ export class IpcComponent{
 
   moneda       : string = 'ipc';
   coinType     : string = 'IPCs';
-  code         : string = '$';
+  code         : string = '%';
   botonGrafico : string = 'Gráfico Anual';
   nombreMoneda : string = 'IPC'
 

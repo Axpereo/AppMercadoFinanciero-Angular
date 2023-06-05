@@ -2,15 +2,16 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { News } from '../interfaces/news';
+import { environmentsNoticias } from 'src/environments/environments';
 
 @Injectable({
   providedIn: 'root'
 })
 export class NewsService {
 
-  private apiKey    : string = '&apiKey=4fc602c1e1ab48818c3f67b429980109'
-  private urlNews   : string = 'https://newsapi.org/v2/everything?language=es&q='
-  private seleccion : string = 'Actualidad'
+  private apiKey    : string = environmentsNoticias.apiKey;
+  private urlNews   : string = environmentsNoticias.urlNews;
+  private seleccion : string = environmentsNoticias.seleccion;
 
   constructor( private http:HttpClient) { }
 

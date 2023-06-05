@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 
-
 @Component({
   selector: 'app-euro',
   templateUrl: './euro.component.html',
@@ -14,7 +13,7 @@ export class EuroComponent{
 
   moneda       : string = 'euro';
   coinType     : string = 'Euros';
-  code         : string = 'EU';
+  code         : string = '€';
   botonGrafico : string = 'Gráfico Mensual';
   nombreMoneda : string = 'Euro';
 

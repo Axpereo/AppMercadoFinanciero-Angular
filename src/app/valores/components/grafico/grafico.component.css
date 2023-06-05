@@ -37,6 +37,7 @@
     box-sizing: border-box;
     display: flex;
     justify-content: center;
+    width: 98% !important;
 }
 
 p{

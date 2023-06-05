@@ -6,7 +6,6 @@
 body{
     background: linear-gradient(#9ededb, #004b84, #000c1c);
     background-attachment:fixed;
-    width: 100vw;
     height: 100vh;
 }
 
@@ -24,4 +23,8 @@ body{
 
 .fondo{
     background-color: rgb(239, 239, 239);
+}
+
+.swal2-confirm, .swal2-styled{
+    background-color: #00877d !important;
 }

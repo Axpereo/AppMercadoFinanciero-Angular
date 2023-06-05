@@ -11,6 +11,7 @@ export class TableComponent implements OnInit{
   
   coins:Coins[]=[];
   loading = true;
+  
   //Recibiendo los parametros desde el HTML
   @Input() public moneda:any;
   @Input() public coinType:any;
