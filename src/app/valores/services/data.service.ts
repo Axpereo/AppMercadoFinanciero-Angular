@@ -2,7 +2,7 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable, OnInit } from '@angular/core';
 import { Observable } from 'rxjs';
 import { Coins } from '../interfaces/valores';
-import { environmentsValores } from 'src/environments/environments';
+import { environment } from 'src/environments/environments';
 
 @Injectable({
   providedIn: 'root'
@@ -10,8 +10,8 @@ import { environmentsValores } from 'src/environments/environments';
 
 export class DataService implements OnInit{
 
-  private apiKey:     string = environmentsValores.apiKey;
-  private serviceUrl: string = environmentsValores.serviceUrl;
+  private apiKey:     string = environment.apiKeyValores;
+  private serviceUrl: string = 'https://api.cmfchile.cl/api-sbifv3/recursos_api';
 
   moneda:string='';
   coinType:string='';

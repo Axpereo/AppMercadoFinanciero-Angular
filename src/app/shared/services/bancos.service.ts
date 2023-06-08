@@ -2,7 +2,7 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Instituciones } from '../interfaces/bancos';
 import { Observable } from 'rxjs';
-import { environmentsBancos } from 'src/environments/environments';
+import { environment } from 'src/environments/environments';
 
 
 @Injectable({
@@ -10,8 +10,8 @@ import { environmentsBancos } from 'src/environments/environments';
 })
 export class BancosService {
 
-    private apiKey:string = environmentsBancos.apiKey;
-    private bancosUrl:string = environmentsBancos.bancosUrl;
+    private apiKey:string = environment.apiKeyBancos;
+    private bancosUrl:string = 'https://api.cmfchile.cl/api-sbifv3/recursos_api/balances/2023/01/instituciones?formato=json&apikey=';
     
     constructor(private http:HttpClient){}
   
