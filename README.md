@@ -1,4 +1,5 @@
 ## Pasos
+
 0. Para correr el proyecto debes obtener una apiKey desde el sitio `https://api.cmfchile.cl/api_cmf/contactanos.jsp`
 
 1. Instalar node.js `https://nodejs.org/en`
@@ -7,17 +8,21 @@
 
 3. Instalar Visual Studio Code `https://code.visualstudio.com`
 
-4. Descargar o clonar el repositorio desde GitHub
+4. Descargar o clonar el repositorio desde GitHub `git clone https://github.com/Axpereo/AppMercadoFinanciero-Angular.git`
 
 5. Abrir la carpeta en VSCode
 
-6. Clonar el archivo .env.template y renombrarlo a .env
+6. Hacer un cd a la carpeta del proyecto `cd AppMercadoFinanciero-Angular-main`
 
-7. Llenar la variable de entorno con nuestra apiKey
+7. Clonar el archivo .env.template y renombrarlo a .env
 
-8. Crear environments con el comando `npm run envs`
+8. Llenar la variable de entorno con nuestra apiKey
 
-4. Levantar la app en entorno local `ng serve -o`
+9. Instalar los paquetes de node `npm install` 
+
+10. Crear environments con el comando `npm run envs`
+
+11. Levantar la app en entorno local `ng serve -o`
 
 
 
