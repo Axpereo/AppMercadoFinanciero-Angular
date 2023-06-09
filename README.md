@@ -1,10 +1,10 @@
 ## Pasos
 
-1. Instalar node.js
+1. Instalar node.js `https://nodejs.org/en`
 
-2. Instalar ultima versión Angular CLI
+2. Con node instalado, desde la terminal instalar Angular CLI `npm install -g @angular/cli`
 
-3. Instalar Visual Studio Code
+3. Instalar Visual Studio Code `https://code.visualstudio.com`
 
 4. Descargar o clonar el repositorio desde GitHub
 
