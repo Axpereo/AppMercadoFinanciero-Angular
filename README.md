@@ -13,7 +13,7 @@
 
 6. Clonar el archivo .env.template y renombrarlo a .env
 
-7. Llenar las variables de entorno con nuestras apiKeys
+7. Llenar la variable de entorno con nuestra apiKey
 
 8. Crear environments con el comando `npm run envs`
 
