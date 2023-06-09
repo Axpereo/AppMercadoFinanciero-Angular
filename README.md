@@ -8,7 +8,7 @@
 
 4. Descargar o clonar el repositorio desde GitHub
 
-5. Abrir la carpeta appMf en VSCode
+5. Abrir la carpeta en VSCode
 
 6. Clonar el archivo .env.template y renombrarlo a .env
 
