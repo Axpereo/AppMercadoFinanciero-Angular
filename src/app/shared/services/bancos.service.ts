@@ -10,7 +10,7 @@ import { environment } from 'src/environments/environments';
 })
 export class BancosService {
 
-    private apiKey:string = environment.apiKeyBancos;
+    private apiKey:string = environment.apiKey;
     private bancosUrl:string = 'https://api.cmfchile.cl/api-sbifv3/recursos_api/balances/2023/01/instituciones?formato=json&apikey=';
     
     constructor(private http:HttpClient){}

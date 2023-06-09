@@ -10,7 +10,7 @@ import { environment } from 'src/environments/environments';
 
 export class DataService implements OnInit{
 
-  private apiKey:     string = environment.apiKeyValores;
+  private apiKey:     string = environment.apiKey;
   private serviceUrl: string = 'https://api.cmfchile.cl/api-sbifv3/recursos_api';
 
   moneda:string='';

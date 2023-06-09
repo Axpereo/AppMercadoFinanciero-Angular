@@ -1,4 +1,5 @@
 ## Pasos
+0. Para correr el proyecto debes obtener una apiKey desde el sitio `https://api.cmfchile.cl/api_cmf/contactanos.jsp`
 
 1. Instalar node.js `https://nodejs.org/en`
 
