@@ -6,7 +6,6 @@ import { EuroComponent } from "./pages/euro/euro.component";
 import { UfComponent } from "./pages/uf/uf.component";
 import { UtmComponent } from "./pages/utm/utm.component";
 import { IpcComponent } from "./pages/ipc/ipc.component";
-import { DolarpruebaComponent } from "./pages/dolarprueba/dolarprueba.component";
 
 const routes: Routes =[
     { path:'dolar', component: DolarComponent},
@@ -14,8 +13,6 @@ const routes: Routes =[
     { path:'uf', component: UfComponent },
     { path:'utm', component: UtmComponent },
     { path:'ipc', component: IpcComponent },
-
-    { path:'dolarprueba', component: DolarpruebaComponent },
 
     { path:'**', redirectTo:'home' },
 ]

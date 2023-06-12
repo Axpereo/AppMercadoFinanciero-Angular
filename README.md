@@ -14,11 +14,11 @@
 
 6. Hacer un cd a la carpeta del proyecto `cd AppMercadoFinanciero-Angular-main`
 
-7. Clonar el archivo .env.template y renombrarlo a .env
+7. Instalar los paquetes de node `npm install` 
 
-8. Llenar la variable de entorno con nuestra apiKey
+8. Clonar el archivo .env.template y renombrarlo a .env
 
-9. Instalar los paquetes de node `npm install` 
+9. Llenar la variable de entorno con nuestra apiKey
 
 10. Crear environments con el comando `npm run envs`
 
