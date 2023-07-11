@@ -1,4 +1,5 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { CUSTOM_ELEMENTS_SCHEMA, NO_ERRORS_SCHEMA } from '@angular/core';
 
 import { ContactoPageComponent } from './contacto-page.component';
 
@@ -8,7 +9,13 @@ describe('ContactoPageComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ ContactoPageComponent ]
+      declarations: [ 
+        ContactoPageComponent 
+      ],
+      schemas:[
+        CUSTOM_ELEMENTS_SCHEMA,
+        NO_ERRORS_SCHEMA
+      ]
     })
     .compileComponents();
 
@@ -20,4 +27,5 @@ describe('ContactoPageComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
 });

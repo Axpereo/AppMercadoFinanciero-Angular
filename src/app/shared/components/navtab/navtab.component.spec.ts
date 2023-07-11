@@ -1,6 +1,7 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { NavtabComponent } from './navtab.component';
+import { DropdownMenuComponent } from '../dropdown-menu/dropdown-menu.component';
 
 describe('NavtabComponent', () => {
   let component: NavtabComponent;
@@ -8,7 +9,10 @@ describe('NavtabComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ NavtabComponent ]
+      declarations: [ 
+        NavtabComponent,
+        DropdownMenuComponent
+      ]
     })
     .compileComponents();
 

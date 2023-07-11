@@ -1,6 +1,9 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { HttpClientTestingModule } from "@angular/common/http/testing";
+import { CUSTOM_ELEMENTS_SCHEMA, NO_ERRORS_SCHEMA } from '@angular/core';
 
 import { GraficoComponent } from './grafico.component';
+import { DataService } from '../../services/data.service';
 
 describe('GraficoComponent', () => {
   let component: GraficoComponent;
@@ -8,7 +11,22 @@ describe('GraficoComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ GraficoComponent ]
+      imports:[
+        HttpClientTestingModule
+      ],
+
+      declarations: [
+        GraficoComponent
+      ],
+
+      providers:[
+        DataService
+      ],
+
+      schemas:[
+        CUSTOM_ELEMENTS_SCHEMA,
+        NO_ERRORS_SCHEMA
+      ]
     })
     .compileComponents();
 

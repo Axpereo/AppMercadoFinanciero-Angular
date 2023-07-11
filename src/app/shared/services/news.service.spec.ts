@@ -1,10 +1,10 @@
 import { TestBed } from '@angular/core/testing';
 
-import { DataService } from './data.service';
+import { NewsService } from './news.service';
 import { HttpClientTestingModule } from '@angular/common/http/testing';
 
 describe('DataService', () => {
-  let service: DataService;
+  let service: NewsService;
 
   beforeEach(() => {
     TestBed.configureTestingModule({
@@ -12,11 +12,10 @@ describe('DataService', () => {
         HttpClientTestingModule
       ]
     });
-    service = TestBed.inject(DataService);
+    service = TestBed.inject(NewsService);
   });
 
   it('should be created', () => {
     expect(service).toBeTruthy();
   });
-
 });

@@ -12,7 +12,6 @@ import { UtmComponent } from './pages/utm/utm.component';
 import { IpcComponent } from './pages/ipc/ipc.component';
 import { TableComponent } from './components/table/table.component';
 import { GraficoComponent } from './components/grafico/grafico.component';
-import { SelectComponent } from './components/select/select.component';
 import { RecargaDirective } from './directives/recarga.directive';
 
 
@@ -28,7 +27,6 @@ import { RecargaDirective } from './directives/recarga.directive';
     TableComponent,
     GraficoComponent,
 
-    SelectComponent,
     RecargaDirective,
   ],
   imports: [

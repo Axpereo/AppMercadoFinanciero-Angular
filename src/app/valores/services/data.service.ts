@@ -19,7 +19,7 @@ export class DataService implements OnInit{
   
   ///////////////////////////////
   mesRecibido:string='';
-  anioRecibido:string=''
+  anioRecibido:string='';
   ///////////////////////////////
 
   constructor( private http: HttpClient ) {

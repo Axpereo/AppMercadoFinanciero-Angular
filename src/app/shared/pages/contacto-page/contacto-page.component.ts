@@ -36,9 +36,6 @@ export class ContactoPageComponent {
         confirmButtonText: 'Ok'
       })
     }
-
-
-
   }
 
 }

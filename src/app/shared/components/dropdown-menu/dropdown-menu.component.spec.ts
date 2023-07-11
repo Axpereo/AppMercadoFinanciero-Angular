@@ -1,6 +1,8 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { CUSTOM_ELEMENTS_SCHEMA, NO_ERRORS_SCHEMA } from '@angular/core';
 
 import { DropdownMenuComponent } from './dropdown-menu.component';
+import { NewsService } from '../../services/news.service';
 
 describe('DropdownMenuComponent', () => {
   let component: DropdownMenuComponent;
@@ -8,7 +10,14 @@ describe('DropdownMenuComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ DropdownMenuComponent ]
+      declarations: [
+        DropdownMenuComponent
+      ],
+       
+      schemas:[
+        CUSTOM_ELEMENTS_SCHEMA,
+        NO_ERRORS_SCHEMA
+      ]
     })
     .compileComponents();
 

@@ -1,6 +1,11 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { HttpClientTestingModule } from "@angular/common/http/testing";
+import { CUSTOM_ELEMENTS_SCHEMA, NO_ERRORS_SCHEMA } from '@angular/core';
 
 import { UtmComponent } from './utm.component';
+import { TableComponent } from '../../components/table/table.component';
+import { GraficoComponent } from '../../components/grafico/grafico.component';
+import { DataService } from '../../services/data.service';
 
 describe('UtmComponent', () => {
   let component: UtmComponent;
@@ -8,7 +13,24 @@ describe('UtmComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ UtmComponent ]
+      imports:[
+        HttpClientTestingModule
+      ],
+
+      declarations: [
+        UtmComponent,
+        TableComponent,
+        GraficoComponent 
+      ],
+      
+      providers: [
+        DataService
+      ],
+
+      schemas:[
+        CUSTOM_ELEMENTS_SCHEMA,
+        NO_ERRORS_SCHEMA
+      ]
     })
     .compileComponents();
 
